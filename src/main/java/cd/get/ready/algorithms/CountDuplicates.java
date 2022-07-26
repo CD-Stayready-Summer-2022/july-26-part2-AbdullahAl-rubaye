@@ -1,5 +1,10 @@
 package cd.get.ready.algorithms;
 
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
 public class CountDuplicates {
     /**
      * Example of overloading a function that accepts a Array String
@@ -16,6 +21,18 @@ public class CountDuplicates {
      * @return
      */
     public Integer countDuplicates(Integer[] input){
-        return null;
+
+        Set<Integer> dupes = new HashSet<Integer>();
+        int d=0;
+        for (Integer i : input) {
+            if (input[i]>1) {
+                d= input[i];
+            }
+        }
+
+        return d;
     }
-}
+
+
+    }
+
